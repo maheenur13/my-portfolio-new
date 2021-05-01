@@ -1,0 +1,29 @@
+.header-text-box{
+    position:absolute;
+    top: 35%;
+    width:100%;
+    /* text-align: center; */
+}
+.header-div{
+    height:100vh;
+    background-color:rgb(73, 73, 122);
+}
+.header-text{
+    text-align:center;
+    color: white;
+    /* display:block; */
+    /* width: 100%; */
+    /* border: 1px solid red; */
+}
+.brand-icon-design{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+.brand-icon{
+    font-size: 3rem;
+    margin-right: 30px;
+}
+#tsparticles{
+    height: 100vh;
+}
