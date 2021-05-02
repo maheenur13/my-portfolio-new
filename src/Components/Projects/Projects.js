@@ -66,7 +66,7 @@ const Projects = () => {
                         </div>)
                     }
                 </div>
-                <Link className="mt-5">Click To See All Projects</Link>
+                <Link to="/allprojects" target="_blank" style={{backgroundColor:'#252934',color:'white',textDecoration:'none'}} className="mt-5 pt-2 pb-2 pr-3 pl-3 mb-5 border">Click To See All Projects</Link>
             </div>
             
         </section>

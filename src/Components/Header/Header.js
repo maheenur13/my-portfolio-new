@@ -1,12 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useEffect } from 'react';
 import Particles from 'react-particles-js';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight,faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagramSquare,faGithubSquare,faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import {Link} from 'react-scroll';
 const Header = () => {
+	useEffect(()=>{
+		Aos.init({duration:2000});
+	},[])
     return (
 		
         <div className="header-div">
@@ -61,7 +66,7 @@ const Header = () => {
 				},
 				"retina_detect": true
 	}} />
-    <div className="header-text-box d-flex flex-column  align-items-center">
+    <div data-aos="fade-up" className="header-text-box d-flex flex-column  align-items-center">
         <h2 className="header-text">HELLO I AM <span style={{color:'yellow'}}> JAHIDUN NUR MAHEE</span></h2>
         <h2 className="header-text">WANT TO KNOW ME?</h2>
        <h3 className="header-text mt-5"> <Link className="work-text p-3 d-block text-white" exact to="navbar" smooth={true} duration={1200}>View My Work <FontAwesomeIcon className="arrow-icon" icon={faArrowRight} /> </Link> 
