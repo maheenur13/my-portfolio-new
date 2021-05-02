@@ -13,7 +13,6 @@ import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
 import Blogs from './Components/Blogs/Blogs';
 import Footer from './Components/Footer/Footer'
-
 function App() {
   return (
     <div>

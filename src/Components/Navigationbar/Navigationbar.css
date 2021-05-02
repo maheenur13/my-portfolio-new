@@ -5,8 +5,18 @@
     color: white;
     /* position:sticky ; */
 }
-.active-class{
-    /* color: red; */
-    background-color:rgb(143, 143, 143);
-    border: 2px solid yellow;
+
+.nav-item>.active-class{
+    background-color: #3e424d;
+    
+}
+
+.nav-link{
+    text-decoration: none;
+    cursor: pointer;
+}
+.all-nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

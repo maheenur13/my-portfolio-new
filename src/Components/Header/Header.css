@@ -27,3 +27,24 @@
 #tsparticles{
     height: 100vh;
 }
+.header-text-box h3{
+    cursor:pointer;
+    transition:.3s;
+    font-size: 23px;
+    border:3px solid white;
+}
+.arrow-icon{
+    transition:.3s;
+}
+.header-text-box h3:hover{
+    background-color:#04C2C9 ;
+    border-color:#04C2C9;
+
+}
+.header-text-box h3:hover .arrow-icon{
+   
+    transform: rotate(90deg)
+}
+.work-text:hover{
+    text-decoration: none;
+}

@@ -3,8 +3,9 @@ import React from 'react';
 import Particles from 'react-particles-js';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagramSquare,faGithubSquare,faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {Link} from 'react-scroll';
 const Header = () => {
     return (
 		
@@ -17,28 +18,54 @@ const Header = () => {
               </div>
             <Particles
 			style={{height:'100vh'}}
-    params={{
-	    "particles": {
-	        "number": {
-	            "value": 100
-	        },
-	        "size": {
-	            "value": 2
-	        }
-	    },
-	    "interactivity": {
-	        "events": {
-	            "onhover": {
-	                "enable": true,
-	                "mode": "repulse"
-	            }
-	        }
-	    }
+			params={{
+				"particles": {
+					"number": {
+						"value": 110,
+						"density": {
+							"enable": true,
+							"value_area": 1500
+						}
+					},
+					"line_linked": {
+						"enable": true,
+						"opacity": 0.4
+					},
+					"move": {
+						"direction": "right",
+						"speed": 0.8
+					},
+					"size": {
+						"value": 2
+					},
+					"opacity": {
+						"anim": {
+							"enable": true,
+							"speed": 3,
+							"opacity_min": 0.05
+						}
+					}
+				},
+				"interactivity": {
+					"events": {
+						"onclick": {
+							"enable": true,
+							"mode": "push"
+						}
+					},
+					"modes": {
+						"push": {
+							"particles_nb": 1
+						}
+					}
+				},
+				"retina_detect": true
 	}} />
-    <div className="header-text-box">
+    <div className="header-text-box d-flex flex-column  align-items-center">
         <h2 className="header-text">Hello I Am <span style={{color:'yellow'}}> Jahidun Nur Mahee</span></h2>
-        <h2 className="header-text">I am a full-Stack Web developer</h2>
-        <h3 className="header-text m-auto border p-2" style={{width:'15%'}}>View My Work</h3>
+        <h2 className="header-text">I am a full-Stack Web developer {'</>'}</h2>
+       <h3 className="header-text mt-5"> <Link className="work-text p-3 d-block text-white" exact to="navbar" smooth={true} duration={1200}>View My Work <FontAwesomeIcon className="arrow-icon" icon={faArrowRight} /> </Link> 
+	   </h3>
     </div>
         </div>
 		
