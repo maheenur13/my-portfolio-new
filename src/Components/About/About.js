@@ -78,6 +78,7 @@ const About = () => {
                     <ProgressBar className="mb-3" style={{height:'27px',borderRadius:'1px'}}  now={92} label={<div><span>Bootstrap</span> <span>92%</span></div>} />
                     <ProgressBar className="mb-3" style={{height:'27px',borderRadius:'1px'}}  now={89} label={<div><span>Material UI</span> <span>89%</span></div>} />
                     <ProgressBar className="mb-3" style={{height:'27px',borderRadius:'1px'}}  now={90} label={<div><span>C</span> <span>94%</span></div>} />
+                    <ProgressBar className="mb-3" style={{height:'27px',borderRadius:'1px'}}  now={90} label={<div><span>JAVA</span> <span>85%</span></div>} />
                     </div>
             </div>
             </div>
