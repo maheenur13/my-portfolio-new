@@ -3,6 +3,7 @@ import { Button, Card, CardDeck } from 'react-bootstrap';
 import image1 from '../../Images/ProjectImages/project1Thumb.PNG';
 import image2 from '../../Images/ProjectImages/project2Thumb.PNG';
 import image3 from '../../Images/ProjectImages/project3Thumb.PNG'
+import {Link} from 'react-router-dom';
 const projectsData=[
     {
         name:'Musical Instrument House',
@@ -53,17 +54,17 @@ const projectsData=[
 const Projects = () => {
     const newData = projectsData.slice(0,3)
     return (
-        <section id="projects" style={{backgroundColor:'#F5F5F5'}} className="pt-5 pb-5">
-            <div className="container d-flex flex-column  align-items-center">
-                <h1 className="text-center mt-4 mb-3">PROJECTS</h1>
+        <section id="projects" style={{backgroundColor:'#F5F5F5',height:'100vh'}} className="pt-3 pb-3">
+            <div className="w-75 m-auto d-flex flex-column  align-items-center">
+                <h1 className="text-center mt-5 mb-3">PROJECTS</h1>
                 <div className="mt-5 mb-4 d-flex flex-wrap justify-content-center align-items-center" >
                     {
-                        newData.map(data=><div className="border mr-3 mb-3" style={{width:'320px'}} >
+                        newData.map(data=><div className="border mr-5 mb-4" style={{width:'350px'}} >
                                 <img style={{width:'100%'}} src={data.thumbnail} alt="" />
                         </div>)
                     }
                 </div>
-                <Button className="mt-5">Click To See All Projects</Button>
+                <Link className="mt-5">Click To See All Projects</Link>
             </div>
             
         </section>

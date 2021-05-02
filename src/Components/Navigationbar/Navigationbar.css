@@ -14,6 +14,7 @@
 .nav-link{
     text-decoration: none;
     cursor: pointer;
+    font-size: 12px;
 }
 .all-nav-items{
     display: flex;

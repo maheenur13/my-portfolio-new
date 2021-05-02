@@ -35,16 +35,18 @@ const aboutInfo = [
 const About = () => {
     
     return (
-        <section id="about" className="p-5" >
-            <h1 className="text-center m-5">ABOUT ME</h1>
+        <section id="about" className="pt-4" style={{height:'100vh'}} >
+            <h1 className="text-center mb-2">ABOUT ME</h1>
             <div className="container">
                 <div className="d-flex justify-content-around align-itmes-center flex-wrap mb-5">
                     {
-                        aboutInfo.map(info => <div className="border d-flex p-3 flex-column justify-content-around align-items-center" style={{width:'200px',marginTop:'50px',overflow:'hidden'}} key={info.id}>
-                            <FontAwesomeIcon className="icon-design" variant='top' icon={info.icon} />
+                        aboutInfo.map(info => <div className="border d-flex p-2 flex-column justify-content-around align-items-center" style={{width:'200px',marginTop:'50px',overflow:'hidden'}} key={info.id}>
+                            <div >
+                             <FontAwesomeIcon className="icon-design" variant='top' icon={info.icon} />
+                            </div>
                             <div>
-                                <h4 className="text-center">{info.title}</h4>
-                                <p className="text-center">
+                                <h4 className="text-center mt-2">{info.title}</h4>
+                                <p className="text-center" style={{fontSize:'13px'}}>
                                     {info.description}
                                 </p>
                             </div>
@@ -53,7 +55,7 @@ const About = () => {
                     }
                 </div>
             </div>
-            <div className="container pt-5">
+            <div className="container pt-4">
             <div className="row">
                     <div className="col-md-6 d-flex flex-column justify-content-center align-items-center">
                         <div>
@@ -71,7 +73,7 @@ const About = () => {
                     <ProgressBar className="mb-3" style={{height:'27px',borderRadius:'1px'}}  now={65} label={<div><span>React </span> <span>65%</span></div>} />
                     <ProgressBar className="mb-3" style={{height:'27px',borderRadius:'1px'}}  now={92} label={<div><span>Bootstrap</span> <span>92%</span></div>} />
                     <ProgressBar className="mb-3" style={{height:'27px',borderRadius:'1px'}}  now={89} label={<div><span>Material UI</span> <span>89%</span></div>} />
-                    <ProgressBar className="mb-3" style={{height:'27px',borderRadius:'1px'}}  now={90} label={<div><span>HTML</span> <span>90%</span></div>} />
+                    <ProgressBar className="mb-3" style={{height:'27px',borderRadius:'1px'}}  now={90} label={<div><span>C</span> <span>94%</span></div>} />
                     </div>
             </div>
             </div>

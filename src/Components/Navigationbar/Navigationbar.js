@@ -29,8 +29,8 @@ const Navigationbar = () => {
           <div className="nav-item">
             <Link activeClass="active-class" spy={true} className="text-white mr-5 p-3 nav-link" offset={-55} exact to="contact" smooth={true} duration={600}>CONTACT</Link>
           </div>
-          <div className="nav-item resume-icon" style={{position:'relative'}}>
-          <a href="https://drive.google.com/uc?export=download&id=1eRKFnZDEmf9KnpC9fzXke3eBppqNtWMv"   role="button" target="_blank" rel="noreferrer"><FontAwesomeIcon className="brand-icon " icon={faFileDownload}/></a> 
+          <div className="nav-item resume-icon" style={{position:'relative',width:'25px '}}>
+          <a href="https://drive.google.com/uc?export=download&id=1eRKFnZDEmf9KnpC9fzXke3eBppqNtWMv"   role="button" target="_blank" rel="noreferrer"><FontAwesomeIcon className="brand-icon " style={{fontSize:'26px',width:'100%'}} icon={faFileDownload}/></a> 
           <p className="resume-button-text ">Download Resume</p>
           </div>
         </Nav>

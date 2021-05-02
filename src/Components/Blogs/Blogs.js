@@ -2,7 +2,7 @@ import React from 'react';
 import BlogData from './BlogData';
 const Blogs = () => {
     return (
-        <section id="blogs">
+        <section id="blogs" style={{height:'100vh'}}>
             <div className="container pt-5 pb-5">
             <h1 className="text-center mt-5 mb-5">BLOGS</h1>
             <div className="d-flex justify-content-around align-items-center">

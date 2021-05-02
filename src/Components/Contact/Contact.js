@@ -12,7 +12,7 @@ const Contact = () => {
             });
     }
     return (
-        <section id="contact" style={{position:'relative',overflow:'hidden',height:'800px'}} className="pt-5 pb-4">
+        <section id="contact" style={{position:'relative',overflow:'hidden',height:'100vh'}} className="pt-5 pb-4">
             <svg style={{position:'absolute',zIndex:'-1',top:'0',height:'100%'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 320"><path fill="#252934" fill-opacity="1" d="M0,33L1440,145L1440,320L0,320Z"></path></svg>
             <svg style={{position:'absolute',zIndex:'-1',top:'0',height:'100%'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 320"><path fill="#252934" fill-opacity="1" d="M0,87L1440,0L1440,320L0,320Z"></path></svg>
             <div className="container  mb-5" style={{zIndex:'3',marginTop:'150px'}}>
