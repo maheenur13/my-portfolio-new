@@ -53,17 +53,17 @@ const projectsData=[
 const Projects = () => {
     const newData = projectsData.slice(0,3)
     return (
-        <section style={{backgroundColor:'#F5F5F5'}} className="pt-5 pb-5">
+        <section id="projects" style={{backgroundColor:'#F5F5F5'}} className="pt-5 pb-5">
             <div className="container d-flex flex-column  align-items-center">
-                <h1 className="text-center">PROJECTS</h1>
-                <div className="mt-5 d-flex flex-wrap">
+                <h1 className="text-center mt-4 mb-3">PROJECTS</h1>
+                <div className="mt-5 mb-4 d-flex flex-wrap justify-content-center align-items-center" >
                     {
-                        newData.map(data=><div className="border mr-3" style={{width:'320px'}} >
+                        newData.map(data=><div className="border mr-3 mb-3" style={{width:'320px'}} >
                                 <img style={{width:'100%'}} src={data.thumbnail} alt="" />
                         </div>)
                     }
                 </div>
-                <Button className="mt-4">Click To See All Projects</Button>
+                <Button className="mt-5">Click To See All Projects</Button>
             </div>
             
         </section>

@@ -35,23 +35,23 @@ const aboutInfo = [
 const About = () => {
     
     return (
-        <div className="p-5" >
+        <section className="p-5" >
             <h1 className="text-center m-5">ABOUT ME</h1>
             <div className="container">
-                <CardDeck className="d-flex justify-content-around align-itmes-center">
+                <div className="d-flex justify-content-around align-itmes-center flex-wrap mb-5">
                     {
-                        aboutInfo.map(info => <Card style={{border:'none',marginTop:'50px'}} key={info.id}>
+                        aboutInfo.map(info => <div className="border d-flex p-3 flex-column justify-content-around align-items-center" style={{width:'200px',marginTop:'50px',overflow:'hidden'}} key={info.id}>
                             <FontAwesomeIcon className="icon-design" variant='top' icon={info.icon} />
-                            <Card.Body>
-                                <Card.Title className="text-center">{info.title}</Card.Title>
-                                <Card.Text className="text-center">
+                            <div>
+                                <h4 className="text-center">{info.title}</h4>
+                                <p className="text-center">
                                     {info.description}
-                                </Card.Text>
-                            </Card.Body>
+                                </p>
+                            </div>
                             
-                        </Card>)
+                        </div>)
                     }
-                </CardDeck>
+                </div>
             </div>
             <div className="container pt-5">
             <div className="row">
@@ -75,7 +75,7 @@ const About = () => {
                     </div>
             </div>
             </div>
-        </div>
+        </section>
     );
 };
 

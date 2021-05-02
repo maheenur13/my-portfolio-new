@@ -1,26 +1,24 @@
 import React from 'react';
 import {Navbar,Nav,NavDropdown} from 'react-bootstrap'
 import './Navigationbar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
+import {Link} from 'react-scroll';
+import {NavLink} from 'react-router-dom'
 const Navigationbar = () => {
     return (
         
             <Navbar sticky="top" className="navigation-design" collapseOnSelect expand="lg">
               
-  <Navbar.Brand className="text-white" href="#home">React-Bootstrap</Navbar.Brand>
+  <Navbar.Brand className="text-white" href="#home">Jahidun Nur</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link className="text-white" href="#features">Features</Nav.Link>
-      <Nav.Link className="text-white" href="#pricing">Pricing</Nav.Link>
-    </Nav>
-    <Nav>
-      <Nav.Link className="text-white" href="#deets">More deets</Nav.Link>
-      <Nav.Link className="text-white" eventKey={2} href="#memes">
-        Dank memes
-      </Nav.Link>
+    <Nav className="m-auto">
+      
+      <Link activeClass="active-class" className="text-white mr-3 " exact to="contact" smooth={true} duration={1200}>Contact</Link>
+      <Link activeClass="active-class" className="text-white mr-3 " exact to="blogs" smooth={true} duration={1200}>blog</Link>
+      <Link activeClass="active-class" className="text-white mr-3 " exact to="contact" smooth={true} duration={1200}>Contact</Link>
+      <Link activeClass="active-class" className="text-white mr-3" exact to="projects" smooth={true} duration={1200}>
+       Projects
+      </Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>

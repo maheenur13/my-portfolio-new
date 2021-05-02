@@ -2,9 +2,9 @@ import React from 'react';
 import BlogData from './BlogData';
 const Blogs = () => {
     return (
-        <section style={{}}>
+        <section id="blogs">
             <div className="container pt-5 pb-5">
-            <h1 className="text-center mb-5">BLOGS</h1>
+            <h1 className="text-center mt-5 mb-5">BLOGS</h1>
             <div className="d-flex justify-content-around align-items-center">
                 {
                     BlogData.map(data=><div style={{width:'300px'}} className="d-flex flex-column align-items-center justify-content-center border p-3">

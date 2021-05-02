@@ -5,3 +5,8 @@
     color: white;
     /* position:sticky ; */
 }
+.active-class{
+    /* color: red; */
+    background-color:rgb(143, 143, 143);
+    border: 2px solid yellow;
+}
