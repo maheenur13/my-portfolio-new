@@ -35,7 +35,7 @@ const aboutInfo = [
 const About = () => {
     
     return (
-        <section id="about" className="pt-4" style={{height:'100vh'}} >
+        <section id="about" className="pt-4 pb-2"  >
             <h1 className="text-center mb-2">ABOUT ME</h1>
             <div className="container">
                 <div className="d-flex justify-content-around align-itmes-center flex-wrap mb-5">
