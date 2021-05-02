@@ -99,7 +99,7 @@ const AllProjects = () => {
     }
     return (
         <div >
-            <button className="open-modal-btn" onClick={openModal}>Open Modal</button>
+            <button className="open-modal-btn" onClick={openModal}>SEE ALL PROJECTS</button>
             <Modal 
                 isOpen={modalIsOpen}
                 //   onAfterOpen={afterOpenModal}

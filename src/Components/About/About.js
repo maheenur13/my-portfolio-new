@@ -39,10 +39,10 @@ const About = () => {
             AOS.init({duration:1400});
         },[])
     return (
-        <section id="about" className="pt-4 pb-2"  >
+        <section id="about" className="pt-3 pb-2"  >
             <h1 data-aos="fade-down" className="text-center mb-2">ABOUT ME</h1>
             <div className="container">
-                <div className="d-flex justify-content-around align-itmes-center flex-wrap mb-5">
+                <div className="d-flex justify-content-around align-itmes-center flex-wrap mb-3">
                     {
                         aboutInfo.map(info => <div data-aos="fade-right" className="border d-flex p-2 flex-column justify-content-around align-items-center" style={{width:'200px',marginTop:'50px',overflow:'hidden'}} key={info.id}>
                             <div>
