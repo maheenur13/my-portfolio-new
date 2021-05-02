@@ -3,7 +3,7 @@ import React from 'react';
 import Particles from 'react-particles-js';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight,faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagramSquare,faGithubSquare,faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import {Link} from 'react-scroll';
 const Header = () => {
@@ -62,8 +62,8 @@ const Header = () => {
 				"retina_detect": true
 	}} />
     <div className="header-text-box d-flex flex-column  align-items-center">
-        <h2 className="header-text">Hello I Am <span style={{color:'yellow'}}> Jahidun Nur Mahee</span></h2>
-        <h2 className="header-text">I am a full-Stack Web developer {'</>'}</h2>
+        <h2 className="header-text">HELLO I AM <span style={{color:'yellow'}}> JAHIDUN NUR MAHEE</span></h2>
+        <h2 className="header-text">WANT TO KNOW ME?</h2>
        <h3 className="header-text mt-5"> <Link className="work-text p-3 d-block text-white" exact to="navbar" smooth={true} duration={1200}>View My Work <FontAwesomeIcon className="arrow-icon" icon={faArrowRight} /> </Link> 
 	   </h3>
     </div>

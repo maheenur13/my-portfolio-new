@@ -2,6 +2,8 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import './Navigationbar.css';
 import { Link } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom'
 const Navigationbar = () => {
   return (
@@ -26,6 +28,10 @@ const Navigationbar = () => {
           
           <div className="nav-item">
             <Link activeClass="active-class" spy={true} className="text-white mr-5 p-3 nav-link" offset={-55} exact to="contact" smooth={true} duration={600}>CONTACT</Link>
+          </div>
+          <div className="nav-item " style={{position:'relative'}}>
+          <a href="https://drive.google.com/uc?export=download&id=1eRKFnZDEmf9KnpC9fzXke3eBppqNtWMv"   role="button" target="_blank" rel="noreferrer"><FontAwesomeIcon className="resume-icon" icon={faFileDownload}/></a> 
+          <p className="resume-button-text ">Download Resume</p>
           </div>
         </Nav>
       </Navbar.Collapse>
