@@ -1,0 +1,11 @@
+.project-image-box{
+    width: 350px;
+    overflow: hidden;
+    
+}
+.project-image-box img{
+    transition:.5s;
+}
+.project-image-box:hover img{
+    transform: scale(1.1);
+}
