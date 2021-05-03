@@ -12,41 +12,78 @@
 .header-text{
     text-align:center;
     color: white;
-    /* display:block; */
-    /* width: 100%; */
-    /* border: 1px solid red; */
+    font-size: 20px;
 }
 .brand-icon-design{
+  
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: absolute;
-    top: 50px;
-    right: 20px;
-    z-index: 1;
+    top: 60%;
+    right: 43%;
+    margin-top: 25px;
+    /* z-index: 1; */
 }
+@media only screen and (max-width: 750px) {
+    .brand-icon-design{
+        width:50%!important;
+        /* margin-top: 25px; */
+        right: 25%!important;
+        /* left:50%; */
+    }
+  }
+@media only screen and (max-width: 1250px) {
+    .brand-icon-design{
+        width:25%;
+        margin-top: 25px;
+        right: 37%;
+        /* left:50%; */
+    }
+  }
 .brand-icon{
     font-size: 2.4rem;
-    margin-right: 30px;
+    margin-right: 35px;
     /* z-index: 2; */
 }
 #tsparticles{
     height: 100vh;
     /* z-index: -5; */
 }
-.header-text-box h3{
-    cursor:pointer;
-    transition:.3s;
-    font-size: 20px;
-    border:2px solid white;
-}
+
 .arrow-icon{
     font-size: 16px;
     transition:.3s;
 }
-.header-text-box h3:hover{
+.header-box-text{
+    cursor:pointer;
+    transition:.3s;
+    font-size: 16px;
+    width: 190px;
+    text-align: center;
+    border: 1px solid white;
+    
+}
+@media only screen and (max-width: 1085px) {
+    .brand-icon-design{
+        margin-top: 100px!important;
+        /* left:50%; */
+    }
+  }
+@media only screen and (max-width: 1085px) {
+    .brand-icon-design{
+        margin-top: 130px!important;
+        width: 60%!important;
+        /* left:50%; */
+    }
+  }
+ .header-box-text:hover{
     background-color:#252934 ;
     border-color:#252934;
-
+    text-decoration: none;
 }
-.header-text-box h3:hover .arrow-icon{
+.header-text-box  .header-box-text:hover .arrow-icon{
    
     transform: rotate(90deg)
 }

@@ -1,12 +1,19 @@
 .icon-design{
-    font-size: 7rem;
+    font-size: 5rem;
     color: rgb(255, 255, 255);
     background-color: #514a72;
     margin: auto;
     width: 100%;
     /* height: 150px; */
-    padding: 0px 20px 0px 20px;
+    padding: 5px 20px 5px 20px;
 }
 .progress-bar{
    background-color: #49497A!important;
 }
+.devider{
+    border-top: 3px solid;
+    width: 100px;
+    margin: auto;
+    transition: .4s;
+  }
+  

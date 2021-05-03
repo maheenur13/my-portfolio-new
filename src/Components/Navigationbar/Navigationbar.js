@@ -8,9 +8,9 @@ import { NavLink } from 'react-router-dom'
 const Navigationbar = () => {
   return (
 
-    <Navbar id="navbar" sticky="top" className="navigation-design" collapseOnSelect expand="lg">
+    <Navbar id="navbar" style={{overflow:'hidden'}} sticky="top" className="navigation-design " collapseOnSelect expand="lg">
 
-      <Navbar.Brand className="text-white" href="#home">Jahidun Nur</Navbar.Brand>
+     
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="m-auto all-nav-items">

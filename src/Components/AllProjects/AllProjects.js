@@ -99,7 +99,7 @@ const AllProjects = () => {
     }
     return (
         <div >
-            <button className="open-modal-btn" onClick={openModal}>SEE ALL PROJECTS</button>
+            <button  className="open-modal-btn" onClick={openModal}>SEE ALL PROJECTS</button>
             <Modal 
                 isOpen={modalIsOpen}
                 //   onAfterOpen={afterOpenModal}
@@ -113,10 +113,10 @@ const AllProjects = () => {
                 <button className="modal-close-button" onClick={closeModal}>X</button>
                 <div className="d-flex mt-5 flex-wrap justify-content-center align-items-center">
                     {
-                        projectsData.map(data => <Card data-aos={data.dataAos} className="mr-2 mb-4 project-box">
-                            <Card.Img style={{width:'300px'}} src={data.thumbnail} alt="Card image" />
+                        projectsData.map(data => <Card  style={{overflow:'hidden',width:'340px'}} data-aos={data.dataAos} className=" mr-2 mb-4 project-box">
+                            <Card.Img style={{width:'100%'}} src={data.thumbnail} alt="Card image" />
                             <Card.ImgOverlay className=" image-overlay w-100">
-                                <Card.Title className="text-center">{data.name}</Card.Title>
+                                <h6 style={{fontSize:'1rem'}}  className="text-center">{data.name}</h6>
                                 <div className=" mt-5  d-flex justify-content-around align-items-center">
                                 <a href={data.gitLink} target="_blank" rel="noreferrer" >GitHub</a><a href={data.liveLink} target="_blank" rel="noreferrer">Live Site</a>
                                 </div>
