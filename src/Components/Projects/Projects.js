@@ -13,14 +13,14 @@ const Projects = () => {
 	},[])
     const newData = projectsData.slice(0,3)
     return (
-        <section id="projects" style={{backgroundColor:'#F5F5F5',overflow:'hidden'}} >
+        <section  id="projects" style={{backgroundColor:'#F5F5F5',overflow:'hidden'}} >
             <div className="d-flex flex-column justify-content-center align-items-center">
                 <h1 data-aos="fade-down" className="text-center mt-5 mb-3">PROJECTS</h1>
                 <div className="mt-5  w-100 d-flex flex-wrap justify-content-center align-items-center" >
                     {
-                        newData.map(data=><div data-aos="fade-left" className="p-2 d-flex justify-content-center align-items-center mr-5 mb-2">
-                            <div className="project-image-box" >
-                                <img style={{width:'100%'}} src={data.thumbnail} alt="" />
+                        newData.map(data=><div data-aos="fade-left" style={{width:'320px'}} className="p-2 border d-flex justify-content-center align-items-center mr-5 mb-2">
+                            <div className="project-image-box w-100" style={{zIndex:'1'}}>
+                                <img  style={{width:'100%'}} src={data.thumbnail} alt="" />
                                 </div>
                         </div>)
                     }

@@ -39,14 +39,14 @@ const About = () => {
             AOS.init({duration:1400});
         },[])
     return (
-        <section id="about" className="pt-3 pb-2"  >
-            <h1 data-aos="fade-down" className="text-center mb-2">ABOUT ME</h1>
+        <section id="about" className="pt-3 pb-2 " style={{backgroundColor:'white',zIndex:'10'}} >
+            <h1 style={{zIndex:'5'}} data-aos="fade-down" className="text-center mb-2">ABOUT ME</h1>
             <div className="container">
-                <div className="d-flex justify-content-around align-itmes-center flex-wrap mb-3">
+                <div style={{zIndex:'1'}} className="d-flex justify-content-around align-itmes-center flex-wrap mb-3">
                     {
                         aboutInfo.map(info => <div data-aos="fade-right" className="border d-flex p-2 flex-column justify-content-around align-items-center" style={{width:'200px',marginTop:'50px',overflow:'hidden'}} key={info.id}>
-                            <div>
-                             <FontAwesomeIcon className="icon-design" variant='top' icon={info.icon} />
+                            <div style={{zIndex:'1'}}>
+                             <FontAwesomeIcon  className="icon-design" variant='top' icon={info.icon} />
                             </div>
                             <div>
                                 <h4 className="text-center mt-2">{info.title}</h4>
@@ -61,7 +61,7 @@ const About = () => {
             </div>
             <div className="container pt-4">
             <div className="row">
-                    <div className="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div style={{zIndex:'10'}} className="col-md-6 d-flex flex-column justify-content-center align-items-center">
                         <div>
                             <img data-aos="slide-right" src={image} style={{width:'250px'}} alt="" />
                         </div>

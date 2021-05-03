@@ -7,6 +7,7 @@
 .header-div{
     height:100vh;
     background-color:rgb(73, 73, 122);
+    /* z-index: -10!important; */
 }
 .header-text{
     text-align:center;
@@ -19,26 +20,30 @@
     position: absolute;
     top: 50px;
     right: 20px;
+    z-index: 1;
 }
 .brand-icon{
     font-size: 2.4rem;
     margin-right: 30px;
+    /* z-index: 2; */
 }
 #tsparticles{
     height: 100vh;
+    /* z-index: -5; */
 }
 .header-text-box h3{
     cursor:pointer;
     transition:.3s;
-    font-size: 23px;
-    border:3px solid white;
+    font-size: 20px;
+    border:2px solid white;
 }
 .arrow-icon{
+    font-size: 16px;
     transition:.3s;
 }
 .header-text-box h3:hover{
-    background-color:#04C2C9 ;
-    border-color:#04C2C9;
+    background-color:#252934 ;
+    border-color:#252934;
 
 }
 .header-text-box h3:hover .arrow-icon{
@@ -47,4 +52,16 @@
 }
 .work-text:hover{
     text-decoration: none;
+}
+.brand-icon-fb{
+   color: rgb(8, 30, 129);
+}
+.brand-icon-insta{
+    color: rgb(216, 78, 35);
+}
+.brand-icon-git{
+    color:#2a303f;
+}
+.brand-icon-in{
+    color:rgb(70, 148, 236);
 }

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Particles from 'react-particles-js';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,20 +9,29 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import {Link} from 'react-scroll';
 const Header = () => {
+
+	const [offsetY,setOffsetY]=useState(0);
+	const handleScroll = ()=>setOffsetY(window.pageYOffset);
+	useEffect(() =>{
+		window.addEventListener('scroll',handleScroll);
+		return () => window.removeEventListener("scroll",handleScroll);
+	},[])
+
 	useEffect(()=>{
 		Aos.init({duration:2000});
 	},[])
     return (
 		
-        <div className="header-div">
-			<div className="brand-icon-design">
-               <a href="https://www.facebook.com/maheenur.lucky13" target="_blank" rel="noreferrer"> <FontAwesomeIcon className="brand-icon" icon={faFacebook}/></a>
-               <a href="https://www.instagram.com/mahee_nur/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="brand-icon" icon={faInstagramSquare}/></a> 
-               <a href="https://github.com/maheenur13" target="_blank" rel="noreferrer"><FontAwesomeIcon className="brand-icon" icon={faGithubSquare}/></a> 
-               <a href="https://www.linkedin.com/in/jahidun-nur-mahee-622634198/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="brand-icon" icon={faLinkedin}/></a> 
+        <div className="header-div" >
+			<div className="brand-icon-design" >
+               <a  href="https://www.facebook.com/maheenur.lucky13" target="_blank" rel="noreferrer"> <FontAwesomeIcon className="brand-icon brand-icon-fb" icon={faFacebook}/></a>
+               <a href="https://www.instagram.com/mahee_nur/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="brand-icon brand-icon-insta" icon={faInstagramSquare}/></a> 
+               <a href="https://github.com/maheenur13" target="_blank" rel="noreferrer"><FontAwesomeIcon className="brand-icon brand-icon-git" icon={faGithubSquare}/></a> 
+               <a href="https://www.linkedin.com/in/jahidun-nur-mahee-622634198/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="brand-icon brand-icon-in" icon={faLinkedin}/></a> 
               </div>
+			  <div  style={{transform:`translateY(${offsetY *0.7}px)`,zIndex:'-5'}}>
             <Particles
-			style={{height:'100vh'}}
+			style={{zIndex:'-10'}}
 			params={{
 				"particles": {
 					"number": {
@@ -66,7 +75,8 @@ const Header = () => {
 				},
 				"retina_detect": true
 	}} />
-    <div data-aos="fade-up" className="header-text-box d-flex flex-column  align-items-center">
+	</div>
+    <div data-aos="fade-up"  className="header-text-box d-flex flex-column  align-items-center">
         <h2 className="header-text">HELLO I AM <span style={{color:'yellow'}}> JAHIDUN NUR MAHEE</span></h2>
         <h2 className="header-text">WANT TO KNOW ME?</h2>
        <h3 className="header-text mt-5"> <Link className="work-text p-3 d-block text-white" exact to="navbar" smooth={true} duration={1200}>View My Work <FontAwesomeIcon className="arrow-icon" icon={faArrowRight} /> </Link> 
