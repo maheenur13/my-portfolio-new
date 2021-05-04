@@ -78,7 +78,7 @@ const Header = () => {
 				<div className="mt-5 d-flex justify-content-around flex-wrap align-items-center" style={{ width: '35%' }}>
 					 <Link  data-aos="zoom-in-up" className="header-box-text  pt-2 pb-2 pr-3 pl-3 mb-3  text-white" exact to="about" smooth={true} duration={1200}>View My Work <FontAwesomeIcon className="arrow-icon" icon={faArrowRight} /> </Link>
 					
-					<a className="header-box-text text-white pt-2 pb-2 pr-3 pl-3 mb-3  "  href="https://drive.google.com/uc?export=download&id=1eRKFnZDEmf9KnpC9fzXke3eBppqNtWMv" role="button" target="_blank" rel="noreferrer">Download Resume <FontAwesomeIcon  style={{fontSize:''}} icon={faFileDownload} /></a>
+					<a  data-aos="zoom-in-up" className="header-box-text text-white pt-2 pb-2 pr-3 pl-3 mb-3  "  href="https://drive.google.com/uc?export=download&id=1eRKFnZDEmf9KnpC9fzXke3eBppqNtWMv" role="button" target="_blank" rel="noreferrer">Download Resume <FontAwesomeIcon  style={{fontSize:''}} icon={faFileDownload} /></a>
 				</div>
 			</div>
 		</div>

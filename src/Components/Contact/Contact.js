@@ -7,6 +7,10 @@ const Contact = () => {
         emailjs.sendForm('service_mahee_email', 'template_ys3pbdn', e.target, 'user_jFyozLCM8J18y21KPtMi3')
             .then((result) => {
                 console.log(result);
+                document.getElementById('email').value="";
+                // console.log(value)
+                document.getElementById('name').value="";
+             document.getElementById('message').value="";
             }, (error) => {
                 console.log(error.text);
             });
@@ -20,16 +24,16 @@ const Contact = () => {
                 <div data-aos="zoom-in" className="devider text-white"></div>
                 <form data-aos="fade-up" className="m-4 d-flex flex-column align-items-center" onSubmit={sendEmail}>
                     <div className="form-group w-75 mt-5">
-                    <input className="w-100 mb-3 p-2" type="text" name="from_name" placeholder="Name" required/>
+                    <input className="w-100 mb-3 p-2" id="name" type="text" name="from_name" placeholder="Name" required/>
                     </div>
                     <div className="form-group w-75">
-                    <input className="w-100 mb-3 p-2" type="email" name="user_email" placeholder="Email" required/>
+                    <input className="w-100 mb-3 p-2" id="email" type="email" name="user_email" placeholder="Email" required/>
                     </div>
                    <div className="form-group w-75 mb-4">
-                   <textarea className="w-100 p-4" name="message" placeholder="Type Your Message" required/>
+                   <textarea className="w-100 p-4" id="message" name="message" placeholder="Type Your Message" required/>
                    </div>
                    
-                    <input style={{padding:'3px 50px'}} type="submit" value="Send" />
+                    <input style={{padding:'3px 50px'}}  type="submit" value="Send" />
                     
                 </form>
             </div>
